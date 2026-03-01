@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="zh">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no,viewport-fit=cover">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="format-detection" content="telephone=no">
+  <!-- favicon 建议放到 h5-src/public/favicon.ico（随构建复制到 /h5/favicon.ico） -->
+  <link rel="icon" href="%BASE_URL%favicon.ico" />
+  <title>H5 App</title>
+  <style>
+    html {
+      height: 100%;
+      -webkit-text-size-adjust: 100%;
+      /* 移动端：强制铺满视口，避免部分浏览器/WebView 留白 */
+      -webkit-tap-highlight-color: transparent;
+    }
+    /* 移动端：全屏铺满，无白边 */
+    body {
+      margin: 0;
+      padding: 0;
+      width: 100%;
+      min-height: 100%;
+      height: 100%;
+      min-height: 100vh;
+      min-height: 100dvh;
+      min-height: -webkit-fill-available;
+      background: #fff;
+      overflow-x: hidden;
+      display: flex;
+      align-items: stretch;
+      justify-content: stretch;
+      -webkit-overflow-scrolling: touch;
+    }
+    #root {
+      width: 100%;
+      max-width: 100%;
+      min-width: 0;
+      min-height: 100vh;
+      min-height: 100dvh;
+      min-height: -webkit-fill-available;
+      height: 100%;
+      margin: 0;
+      padding: env(safe-area-inset-top) env(safe-area-inset-right) env(safe-area-inset-bottom) env(safe-area-inset-left);
+      box-sizing: border-box;
+      background: #fff;
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+      position: relative;
+    }
+    /* 电脑端：沿用之前样式，居中 377×665 手机框 */
+    @media (min-width: 768px) {
+      body {
+        background: #e8e8e8;
+        align-items: center;
+        justify-content: center;
+        overflow: hidden;
+      }
+      #root {
+        width: 377px;
+        max-width: 377px;
+        height: 665px;
+        max-height: 100vh;
+        min-height: 0;
+        padding: 0;
+        margin: 0 auto;
+      }
+    }
+    #root > * { width: 100%; height: 100%; min-height: 0; }
+    /* Popup 限制在手机容器内显示 */
+    #root .adm-popup,
+    #root .adm-mask {
+      position: absolute !important;
+    }
+    #root .adm-popup {
+      inset: 0 !important;
+    }
+    #root .adm-popup-body {
+      width: 100% !important;
+      max-width: 100% !important;
+    }
+  </style>
+</head>
+<body>
+  <div id="root"></div>
+  <script type="module" src="/src/main.tsx"></script>
+</body>
+</html>
