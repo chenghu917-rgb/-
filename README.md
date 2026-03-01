@@ -1,3 +1,19 @@
+
+看演示可以TG：https://t.me/dszzz566
+
+<img width="403" height="660" alt="image" src="https://github.com/user-attachments/assets/d5d62f37-26d7-4dd4-b3cc-c2ae28659d52" />
+<img width="395" height="634" alt="image" src="https://github.com/user-attachments/assets/c7ec4aac-5e42-4731-8fd7-2e237ebe96ad" />
+<img width="390" height="632" alt="image" src="https://github.com/user-attachments/assets/be7bc4b3-d813-417c-8f1a-288bdd566b88" />
+<img width="380" height="639" alt="image" src="https://github.com/user-attachments/assets/532d8324-c120-4a65-b85a-af602e41d6b9" />
+<img width="384" height="624" alt="image" src="https://github.com/user-attachments/assets/cd12ac2c-7a82-4adf-9357-9a54675d7316" />
+<img width="1756" height="809" alt="image" src="https://github.com/user-attachments/assets/edc80340-8cf1-4074-98d0-e954f4431638" />
+
+
+
+
+
+
+
 # H5 前端项目
 
 React + antd-mobile + Vite 新建项目，用于替换 `public/h5` 的旧前端。
@@ -56,3 +72,4 @@ npm run build
 
 首页「Partner」区域的 12 张图标来自 `assets/upload`（子目录 0c、2c、7e、18、28、65、95、a9、c4、df、f2、f4）。  
 开发与构建时会使用 `public/assets/upload`：若你更新了 `h5-src/assets/upload` 下的文件，需再复制到 `public/assets/upload`，或重新执行一次复制（例如 PowerShell：`Copy-Item -Path .\assets\upload\* -Destination .\public\assets\upload -Recurse -Force`）。
+
